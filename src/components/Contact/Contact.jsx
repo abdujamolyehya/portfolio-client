@@ -1,5 +1,8 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Contact() {
   const contactOptions = [
@@ -38,24 +41,38 @@ export default function Contact() {
       href: "https://www.linkedin.com/in/yahyoabdujamolov/",
     },
   ];
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <section className="bg-black py-[100px]" id="contact">
         <div className="container flex justify-center">
           <div className="w-[1200px] gap-[50px] flex flex-col items-center py-[80px] rounded-[24px] border-[1px] border-solid border-lightgray bg-gray">
             <div className="flex flex-col gap-[20px] items-center text-center w-[600px]">
-              <h2 className="inter700 text-[48px] leading-[150%] text-white">Let&apos;s Talk!</h2>
-              <p className="inter400 text-[18px] leading-[150%] text-lightgray">
+              <h2
+                className="inter700 text-[48px] leading-[150%] text-white"
+                data-aos="fade-up"
+              >
+                Let&apos;s Talk!
+              </h2>
+              <p
+                className="inter400 text-[18px] leading-[150%] text-lightgray"
+                data-aos="zoom-in"
+              >
                 Interested in working together or have a question? Feel free to
                 reach out. I&apos;m here to help you turn your ideas into
                 amazing digital realities. Looking forward to hearing from you
                 soon!
               </p>
             </div>
-            <ul className="flex gap-[16px]">
+            <ul className="flex gap-[16px]" data-aos="fade-right">
               {contactOptions.map((option) => (
                 <Link key={option.href} href={option.href}>
-                  <li className="p-[10px] flex items-center justify-center rounded-[8px] border-solid border-[1px] border-lightgray bg-black">{option.icon}</li>
+                  <li className="p-[10px] flex items-center justify-center rounded-[8px] border-solid border-[1px] border-lightgray bg-black">
+                    {option.icon}
+                  </li>
                 </Link>
               ))}
               <Link href={"mailto:abdujamolyehya@gmail.com"}>
