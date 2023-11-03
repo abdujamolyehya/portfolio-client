@@ -22,7 +22,7 @@ export default function Main() {
             priority
           />
           <div>
-            <div className="mx-[112px]">
+            <div className="mx-[132px] pl-[20px]">
               <h1 className=" inter700 text-[90px] leading-[120%] tracking-[-0.9px] text-white title">
                 Hi, I&apos;m Yahyo Abdujamolov
               </h1>
@@ -31,9 +31,7 @@ export default function Main() {
               className="mt-[16px] text-[32px] inter400 leading-[150%] text-lightgray text-center mx-[220px]"
               data-aos="fade-up"
             >
-              I&apos;m a passionate Software Engineer focused on crafting
-              remarkable digital experiences. My aim is to blend functionality
-              and aesthetics to create impactful solutions
+              I&apos;m a Software Engineer, weaving innovation and design into digital wonders. My code is the brush, and the web is my canvas. Let&apos;s explore the art of technology together.
             </h2>
           </div>
         </div>
