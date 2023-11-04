@@ -34,7 +34,7 @@ export default function Header() {
                 key={link.id}
                 className="inter600 text-[16px] mobile:text-[12px] leading-[24px] text-white py-[8px] mobile:py-[4px] px-[14px] mobile:px-[7px] hover:bg-gray hover:border-lightgray border-black border-[1px] border-solid rounded-[8px] ease-in-out duration-500"
               >
-                <Link href={link.path}>{link.name}</Link>
+                <a href={link.path}>{link.name}</a>
               </li>
             ))}
           </ul>
