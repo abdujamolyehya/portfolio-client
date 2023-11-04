@@ -18,6 +18,15 @@ module.exports = {
         gray: '#121212'
       }
     },
+    screens: {
+      "medium": {
+        "max": "1200px",
+        "min": "700px"
+      },
+      "mobile": {
+        "max": "700px"
+      }
+    }
   },
   plugins: [],
 }

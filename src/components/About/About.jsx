@@ -57,16 +57,16 @@ export default function About() {
 
   return (
     <>
-      <section className="bg-black py-[100px]" id="about">
-        <div className="container px-[115px] flex flex-col gap-[20px] items-start">
+      <section className="bg-black py-[100px] medium:py-[50px] mobile:py-[40px]" id="about">
+        <div className="container px-[115px] medium:px-[30px] mobile:px-[15px] flex flex-col gap-[20px] medium:gap-[15px] mobile:gap-[10px] items-start mobile:items-center">
           <h2
-            className="inter700 leading-[150%] text-[48px] text-white"
+            className="inter700 leading-[150%] text-[48px] medium:text-[36px] mobile:text-[28px] text-white"
             data-aos="fade-right"
           >
             About Me
           </h2>
           <p
-            className="inter400 text-[20px] leading-[170%] text-white text-justify tracking-[2px]"
+            className="inter400 text-[20px] medium:text-[16px] mobile:text-[16px] leading-[170%] text-white text-justify mobile:text-center tracking-[2px]"
             data-aos="fade-right"
           >
             I&apos;m a software engineer with a focus on crafting code that
@@ -79,27 +79,27 @@ export default function About() {
             for private schools. I&apos;m committed to pushing the boundaries of
             software engineering to create meaningful experiences.
           </p>
-          <div className="mt-[70px]">
+          <div className="mt-[70px] medium:mt-[40px] mobile:mt-[40px]">
             <h2
-              className="text-[32px] text-white inter700 tracking-[2px]"
+              className="text-[32px] medium:text-[24px] mobile:text-[20px] text-white inter700 tracking-[2px] mobile:text-center"
               data-aos="fade-right"
             >
               PROFESSIONAL EXPERIENCE
             </h2>
             {experience.map((exp, index) => (
-              <div key={index} className="mt-[50px]">
-                <div className="flex justify-between text-white mt-[30px]">
-                  <h3 className="text-[22px] inter400" data-aos="fade-right">
+              <div key={index} className="mt-[50px] medium:mt-[30px] mobile:mt-[30px]">
+                <div className="flex mobile:flex-col medium:flex-col justify-between text-white mt-[30px] medium:mt-[20px] mobile:mt-[20px]">
+                  <h3 className="text-[22px] medium:text-[16px] mobile:text-[16px] inter400" data-aos="fade-right">
                     <strong className="text-[#FFAC1C]">
                       {exp.companyName}
                     </strong>{" "}
                     - {exp.title}
                   </h3>
-                  <h3 className="text-[#FFAC1C] inter700" data-aos="fade-left">
+                  <h3 className="text-[#FFAC1C] inter700 mobile:text-[14px] medium:text-[14px] medium:text-white" data-aos="fade-left">
                     {exp.time}
                   </h3>
                 </div>
-                <ul className="text-white list-disc mt-[20px] text-[18px] flex flex-col gap-[20px] pl-[20px] tracking-[2px] inter400">
+                <ul className="text-white list-disc mt-[20px] text-[18px] mobile:text-[14px] medium:text-[14px] flex flex-col gap-[20px] mobile:gap-[12px] medium:gap-[12px] pl-[20px] tracking-[2px] inter400">
                   {exp.bulletpoints.map((bullet, index) => (
                     <li key={index} data-aos="fade-right">
                       {bullet}
@@ -109,21 +109,21 @@ export default function About() {
               </div>
             ))}
           </div>
-          <div className="mt-[90px] w-full">
+          <div className="mt-[90px] medium:mt-[40px] mobile:mt-[40px] w-full">
             <h2
-              className="text-[32px] text-white inter700 tracking-[2px]"
+              className="text-[32px] medium:text-[24px] mobile:text-[20px] mobile:text-center text-white inter700 tracking-[2px]"
               data-aos="fade-right"
             >
               EDUCATION
             </h2>
             {education.map((edu, index) => (
               <div key={index}>
-                <div className="flex justify-between text-white mt-[30px]">
-                  <h3 className="text-[22px] inter400" data-aos="fade-right">
+                <div className="flex justify-between mobile:flex-col text-white mt-[30px] medium:mt-[20px] mobile:mt-[20px]">
+                  <h3 className="text-[22px] mobile:text-[16px] medium:text-[16px] inter400" data-aos="fade-right">
                     <strong className="text-[#FFAC1C]">{edu.name}</strong> -{" "}
                     {edu.profession}
                   </h3>
-                  <h3 className="text-[#FFAC1C] inter700" data-aos="fade-left">
+                  <h3 className="text-[#FFAC1C] inter700 mobile:text-[14px] medium:text-[14px]" data-aos="fade-left">
                     {edu.time}
                   </h3>
                 </div>

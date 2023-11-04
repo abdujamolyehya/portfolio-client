@@ -62,18 +62,18 @@ export default function Contact() {
   }, []);
   return (
     <>
-      <section className="bg-black py-[100px]" id="contact">
-        <div className="container flex justify-center">
-          <div className="w-[1200px] gap-[50px] flex flex-col items-center py-[80px] rounded-[24px] border-[1px] border-solid border-lightgray bg-gray">
-            <div className="flex flex-col gap-[20px] items-center text-center w-[600px]">
+      <section className="bg-black py-[100px] mobile:py-[50px] medium:py-[50px]" id="contact">
+        <div className="container flex justify-center px-[100px] medium:px-[25px] mobile:px-[15px]">
+          <div className="w-full gap-[50px] medium:gap-[30px] mobile:gap-[20px] flex flex-col items-center py-[80px] medium:py-[40px] mobile:py-[20px] rounded-[24px] border-[1px] border-solid border-lightgray bg-gray px-[80px] medium:px-[25px] mobile:px-[15px]">
+            <div className="flex flex-col gap-[20px] items-center text-center">
               <h2
-                className="inter700 text-[48px] leading-[150%] text-white"
+                className="inter700 text-[48px] medium:text-[36px] mobile:text-[28px] leading-[150%] text-white"
                 data-aos="fade-up"
               >
                 Let&apos;s Talk!
               </h2>
               <p
-                className="inter400 text-[18px] leading-[150%] text-lightgray"
+                className="inter400 text-[18px] medium:text-[16px] mobile:text-[14px] leading-[150%] text-lightgray"
                 data-aos="zoom-in"
               >
                 If you&apos;re interested in collaborating or have any questions,
@@ -82,17 +82,18 @@ export default function Contact() {
                 I&apos;m excited to hear from you in the near future!
               </p>
             </div>
-            <ul className="flex gap-[16px]" data-aos="fade-right">
+            <ul className="flex mobile:flex-wrap justify-center gap-[16px] medium:gap-[8px] mobile:gap-[6px]" data-aos="fade-right">
               {contactOptions.map((option) => (
                 <Link key={option.href} href={option.href}>
-                  <li className="p-[10px] flex items-center justify-center rounded-[8px] border-solid border-[1px] border-lightgray bg-black">
+                  <li className="p-[10px] medium:p-[8px] mobile:p-[5px] flex items-center justify-center rounded-[8px] border-solid border-[1px] border-lightgray bg-black">
                     {option.icon}
                   </li>
                 </Link>
               ))}
               <Link href={"mailto:abdujamolyehya@gmail.com"}>
-                <li className="gap-[10px] py-[8px] px-[16px] text-white flex items-center justify-center rounded-[8px] border-solid border-[1px] border-lightgray bg-black">
+                <li className="gap-[10px] medium:gap-[5px] mobile:gap-[5px] py-[8px] medium:py-[5px] mobile:py-[5px] px-[16px] medium:px-[8px] mobile:px-[6px] text-white flex items-center justify-center rounded-[8px] border-solid border-[1px] border-lightgray bg-black">
                   <svg
+                    className="mobile:w-[20px] mobile:h-[20px]"
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
                     height="30"
@@ -107,13 +108,13 @@ export default function Contact() {
                   abdujamolyehya@gmail.com
                 </li>
               </Link>
-              <li className="gap-[10px] py-[8px] px-[16px] text-white flex items-center justify-center rounded-[8px] border-solid border-[1px] border-lightgray bg-black">
+              <li className="gap-[10px] medium:gap-[5px] mobile:gap-[5px] py-[8px] medium:py-[5px] mobile:py-[5px] px-[16px] medium:px-[8px] mobile:px-[6px] text-white flex items-center justify-center rounded-[8px] border-solid border-[1px] border-lightgray bg-black">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
                   fill="currentColor"
-                  className="bi bi-telephone-fill"
+                  className="bi bi-telephone-fill mobile:w-[16px] mobile:h-[16px]"
                   viewBox="0 0 16 16"
                 >
                   <path

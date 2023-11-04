@@ -15,9 +15,15 @@
         margin: 0 auto;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 700px) {
         .container{
             max-width: 393px;
+        }
+    }
+
+    @media (max-width: 1200px) and (min-width: 700px) {
+        .container{
+            max-width: 700px;
         }
     }
 }
@@ -46,12 +52,34 @@
 
 .title{
     border-right: 7px solid;
+    padding: 0 10px;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     animation: 
         typing 2s steps(22),
         cursor .4s step-end infinite alternate;
+}
+
+@media (max-width: 700px){
+    .title{
+        border-right: 3px solid;
+    }
+    .swiper-button-next{
+        display: none !important;
+    }
+    .swiper-button-prev{
+        display: none !important;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 700px){
+    .swiper-button-next{
+        display: none !important;
+    }
+    .swiper-button-prev{
+        display: none !important;
+    }
 }
 
 @keyframes cursor {

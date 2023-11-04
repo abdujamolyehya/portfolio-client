@@ -1,4 +1,3 @@
-'use client'
 import React from "react";
 import Link from "next/link";
 
@@ -27,13 +26,13 @@ export default function Header() {
     ]
     return(
         <>
-            <header className="bg-black opacity-[90%] py-[20px] backdrop-blur-[10px] fixed z-[10] w-full">
+            <header className="bg-black opacity-[90%] py-[20px] mobile:py-[10px] backdrop-blur-[10px] fixed z-[10] w-full">
                 <nav className="container">
-                    <ul className="flex gap-[24px] justify-center">
+                    <ul className="flex gap-[24px] mobile:gap-[12px] justify-center">
                         {
                             headerLinks.map((link) => (
-                                <Link key={link.id} href={link.path}>
-                                    <li className="inter600 text-[16px] leading-[24px] text-white py-[8px] px-[14px] hover:bg-gray hover:border-lightgray border-black border-[1px] border-solid rounded-[8px] ease-in-out duration-500">
+                                <Link key={link.id} href={link.path}>       
+                                    <li className="inter600 text-[16px] mobile:text-[12px] leading-[24px] text-white py-[8px] mobile:py-[4px] px-[14px] mobile:px-[7px] hover:bg-gray hover:border-lightgray border-black border-[1px] border-solid rounded-[8px] ease-in-out duration-500">
                                         {link.name}
                                     </li>
                                 </Link>

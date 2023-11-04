@@ -10,25 +10,25 @@ export default function Main() {
   }, []);
   return (
     <>
-      <section className="bg-black pt-[80px] pb-[240px]">
-        <div className="container flex flex-col items-center gap-[50px]">
+      <section className="bg-black pt-[80px] medium:pt-[60px] mobile:pt-[40px] pb-[240px] medium:pb-[160px] mobile:pb-[120px]">
+        <div className="container flex flex-col items-center gap-[50px] medium:gap-[36px] mobile:gap-[25px] px-[30px] medium:px-[25px] mobile:px-[15px]">
           <Image
             data-aos="zoom-in"
-            className="rounded-[50%] border-lightgray border-solid border-[5px]"
+            className="rounded-[50%] border-lightgray border-solid border-[5px] mobile:border-[2px] mobile:w-[87px] medium:w-[120px] mobile:h-[87px] medium:h-[120px] "
             src={"/assets/images/main-img.jpg"}
             width={175}
             height={175}
             alt="my image"
             priority
           />
-          <div>
-            <div className="mx-[132px] pl-[20px]">
-              <h1 className=" inter700 text-[90px] leading-[120%] tracking-[-0.9px] text-white title">
+          <div className="flex flex-col items-center gap-[16px] ">
+            <div className="text-center">
+              <h1 className="inter700 text-[90px] mobile:text-[28px] medium:text-[50px] leading-[120%] tracking-[-0.9px] text-white title">
                 Hi, I&apos;m Yahyo Abdujamolov
               </h1>
             </div>
             <h2
-              className="mt-[16px] text-[32px] inter400 leading-[150%] text-lightgray text-center mx-[220px]"
+              className="text-[32px] medium:text-[24px] mobile:text-[14px] inter400 leading-[150%] text-lightgray text-center mx-[220px] medium:mx-[50px] mobile:mx-0 mobile:text-center"
               data-aos="fade-up"
             >
               I&apos;m a Software Engineer, weaving innovation and design into digital wonders. My code is the brush, and the web is my canvas. Let&apos;s explore the art of technology together.

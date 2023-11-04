@@ -15,7 +15,7 @@ export default function Work() {
       name: "Lawork",
       type: "SaaS",
       about:
-        "POS and warehouse management system for B2B sellers. (Collaborated with Dynamic Soft Company)",
+        "POS and warehouse management system for B2B sellers. Available with these test login and password: Yahyo_test@123 (Collaborated with Dynamic Soft Company)",
       img: "/assets/images/lawork.png",
       link: "https://dynamicsoft.uz/en/portfolio/lawork",
       width: 300,
@@ -72,17 +72,17 @@ export default function Work() {
   }, []);
   return (
     <>
-      <section className="py-[80px] bg-black flex justify-center" id="work">
-        <div className="container px-[115px]">
+      <section className="py-[80px] mobile:py-[40px] medium:py-[40px] bg-black flex justify-center" id="work">
+        <div className="container px-[115px] medium:px-0 mobile:px-0">
           <h2
-            className="inter700 text-[48px] leaing-[150%] text-white"
+            className="inter700 text-[48px] medium:text-[36px] mobile:text-[28px] mobile:text-center leaing-[150%] text-white px-[30px] medium:px-[25px] mobile:px-[15px]"
             data-aos="fade-right"
           >
             My work
           </h2>
           <Swiper
             data-aos="zoom-in"
-            className="z-10 mt-[80px]"
+            className="z-10 mt-[80px] medium:mt-[40px] mobile:mt-[30px]"
             modules={[Navigation]}
             spaceBetween={30}
             loop={true}
@@ -91,23 +91,23 @@ export default function Work() {
             navigation
           >
             {myWork.map((work) => (
-              <SwiperSlide key={work.id}>
-                <div className="flex bg-gray border-[1px] border-solid border-lightgray rounded-[24px] p-[60px] justify-center gap-[40px] mx-[100px] h-[460px]">
-                  <div className="w-[386px] flex flex-col gap-[24px]">
+              <SwiperSlide key={work.id} className="mobile:cursor-grab medium:cursor-grab">
+                <div className="flex mobile:flex-col bg-gray border-[1px] border-solid border-lightgray rounded-[24px] p-[60px] medium:p-[30px] mobile:p-[25px] justify-center gap-[40px] medium:gap-[20px] mx-[100px] mobile:mx-0 medium:mx-0 h-[460px] medium:h-[380px] mobile:h-auto">
+                  <div className="w-[386px] mobile:w-auto flex flex-col gap-[24px] mobile:gap-[15px] mobile:order-2">
                     <h3
-                      className="inter700 leading-[130%] text-[32px] text-white"
+                      className="inter700 leading-[130%] text-[32px] medium:text-[24px] mobile:text-[24px] text-white"
                       data-aos="fade-right"
                     >
                       {work.name}
                     </h3>
                     <p
-                      className="text-white text-[16px] inter400 leading-[150%]"
+                      className="text-white text-[16px] medium:text-[14px] mobile:text-[14px] inter400 leading-[150%]"
                       data-aos="fade-right"
                     >
                       {work.type}
                     </p>
                     <p
-                      className="text-lightgray inter400 text-[18px] leading-[150%] h-[300px]"
+                      className="text-lightgray inter400 text-[18px] medium:text-[14px] mobile:text-[14px] leading-[150%] h-[300px] medium:h-[150px] mobile:h-[150px] "
                       data-aos="fade-right"
                     >
                       {work.about}
@@ -116,12 +116,13 @@ export default function Work() {
                         More
                       </a>
                   </div>
-                  <div className="bg-white rounded-[16px] flex items-center justify-center w-[460px] h-auto">
+                  <div className="bg-white rounded-[16px] flex items-center justify-center w-[460px] mobile:w-auto medium:w-[400px] h-auto mobile:h-[175px] mobile:order-1">
                     <div
                       className="box-border flex items-center justify-center"
                       data-aos="fade-left"
                     >
                       <Image
+                        className="medium:scale-75 mobile:scale-50"
                         src={work.img}
                         width={work.width}
                         height={work.height}
