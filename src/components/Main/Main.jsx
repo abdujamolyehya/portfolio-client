@@ -24,7 +24,7 @@ export default function Main() {
           <div className="flex flex-col items-center gap-[16px] ">
             <div className="text-center">
               <h1 className="inter700 text-[90px] mobile:text-[28px] medium:text-[50px] leading-[120%] tracking-[-0.9px] text-white title">
-                Hi, I&apos;m Jacob Jamison
+                Hi, I&apos;m Yahyo Abdujamolov
               </h1>
             </div>
             <h2
