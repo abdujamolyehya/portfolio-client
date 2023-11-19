@@ -38,7 +38,7 @@ export default function Contact() {
           />
         </svg>
       ),
-      href: "https://www.linkedin.com/in/yahyoabdujamolov/",
+      href: "https://www.linkedin.com/in/abdujamolyahyo/",
     },
     {
       icon: (
